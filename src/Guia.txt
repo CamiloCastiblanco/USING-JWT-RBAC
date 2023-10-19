@@ -1,0 +1,6 @@
+- Para crear el proyecto:
+mvn io.quarkus.platform:quarkus-maven-plugin:3.4.3:create -DprojectGroupId=org.acme -DprojectArtifactId=security-jwt-quickstart -Dextensions="resteasy-reactive-jackson,smallrye-jwt,smallrye-jwt-build" -DnoCode
+- Para ejecutar
+mvn quarkus:dev
+- Para verificar el jwt
+curl -H "Authorization: Bearer <Token Generado>" http://127.0.0.1:8080/secured/roles-allowed
